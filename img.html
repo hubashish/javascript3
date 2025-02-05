@@ -9,10 +9,10 @@
     <h2>Amazing image</h2>
     <div>
         <ul id ="images">
-            <li><img width="200px" id="hanumanji" src="C:\Users\NAGESH GIRI\OneDrive\Pictures\hanumanji.jpg" alt=""></li>
-            <li><img width="200px" id="hanumanji" src="C:\Users\NAGESH GIRI\OneDrive\Pictures\hanumanjii.jpg" alt=""></li>
-            <li><img width="200px" id="hanumanji" src="C:\Users\NAGESH GIRI\OneDrive\Pictures\ramji.jpg" alt=""></li>
-            <li><img width="200px" id="hanumanji" src="C:\Users\NAGESH GIRI\OneDrive\Pictures\Camera Roll\classmates.jpg" alt="" > </li>
+            <li><img width="200px" id="hanumanji" src="/classmates.jpg" alt=""></li>
+            <li><img width="200px" id="hanumanji" src="/hanumanji.jpg" alt=""></li>
+            <li><img width="200px" id="hanumanji" src="/hanumanjii.jpg" alt=""></li>
+            <li><img width="200px" id="hanumanji" src="/ramji.jpg" alt="" > </li>
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
 
         </ul>
@@ -23,8 +23,8 @@
 <!-- document.getElementById('hanumanji').onclick = function(){
     alert("hanumanji clicked")
 } -->
-document.getElementById('hanumanji').addEventListener('click' , function(){
-    alert ("hanumanji clicked again")
-})
+document.getElementById('hanumanji').addEventListener('click' , function(e){
+    console.log(e);
+},false)
 </script>
 </html>
